@@ -23,6 +23,14 @@ subfolder_inc=
 subfolder_obj=
 subfolder_lib=
 subfolder_lkr=
+[FILE_SUBFOLDERS]
+file_000=.
+[GENERATED_FILES]
+file_000=no
+[OTHER_FILES]
+file_000=no
+[FILE_INFO]
+file_000=source.c
 [SUITE_INFO]
 suite_guid={BA86BF99-4C07-4CE2-A9E7-C2A337910996}
 suite_state=
