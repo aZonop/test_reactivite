@@ -1,0 +1,63 @@
+
+ROM used:   659/7936 (8%)
+            659/7936 (8%) including unused fragments
+
+            0.2 Average locations per line
+            1.2 Average locations per statement
+
+RAM used:   29/357 (8%) at main() level
+            40/357 (11%) worst case
+
+Stack used: 1 worst case (0 in main + 1 for interrupts)
+Stack size: 7
+
+Lines Stmts  %   Files
+----- ----- ---  -----
+  119    44   8  main.c
+   10     0   0  ..\include\887_sv3_std.h
+  773     0   0  ..\..\..\..\..\Program Files (x86)\PICC\devices\16F887.h
+ 1352   359  67  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stdlib.h
+   32     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\stddef.h
+  435   129  24  ..\..\..\..\..\Program Files (x86)\PICC\drivers\string.h
+   28     0   0  ..\..\..\..\..\Program Files (x86)\PICC\drivers\ctype.h
+----- -----
+ 2749   532 Total
+
+Page ROM  %  RAM    Vol Diff  Functions:
+---- --- --- ---    --- ----  ----------
+ Inline        13             @MUL3232
+0    104  16    4    101  3.8  rand
+0     37   6    5             @DIV1616
+0     20   3    1             @delay_ms2
+0      5   1    0     17  1.3  Timer1
+0     73  11    1    577  3.4  init
+0    126  19    6    641  4.4  MAIN
+0      8   1    0             @const886
+0     91  14    5             @PSTRINGCN7_115200_62_63
+0     21   3    3             @DIV88
+0     93  14    6             @PRINTF_D_115200_62_63
+ Inline         0             @cinit1
+
+Program metrics:
+    Functions               4
+    Statements              532
+    Comments                955
+    Volume (V)              1715
+    Difficulty (D)          12.9
+    Effort to implement (E) 22082
+    Time to implement (T)   20 minutes
+    Est Delivered Bugs (B)  0
+    Cyclomatic Complexity   1
+    Maintainability (MI)    14
+
+ Segment     Used  Free
+-----------  ----  ----
+00000-00003     4  0  
+00004-00050    77  0  
+00051-007FF   578  1389  
+00800-00FFF     0  2048  
+01000-017FF     0  2048  
+01800-01EFF     0  1792  
+
+
+

@@ -1,0 +1,16 @@
+*** Error 18 "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\include\887_sv3_std.h" Line 1(9,19): File can not be opened
+    Not in source "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\include\16F887.h"
+    Not in local "16F887.h"
+    Not in project "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\Projet\16F887.h"
+*** Error 128 "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\include\887_sv3_std.h" Line 3(9,47): A #DEVICE required before this line
+*** Error 128 "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\include\887_sv3_std.h" Line 3(9,47): A #DEVICE required before this line
+*** Error 128 "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\include\887_sv3_std.h" Line 4(7,77): A #DEVICE required before this line
+*** Error 18 "source.c" Line 2(10,79): File can not be opened
+    Not in source "stdlib.h"
+    Not in local "stdlib.h"
+    Not in project "C:\Users\Clement_Hoedenaeken\Documents\Devoir_Alstom\test_reactivite\Projet\stdlib.h"
+*** Error 128 "source.c" Line 9(43,49): A #DEVICE required before this line
+*** Error 12 "source.c" Line 12(13,14): Undefined identifier  -- output_drive
+*** Error 12 "source.c" Line 13(13,14): Undefined identifier  -- output_float
+      8 Errors,  0 Warnings.
+Build Failed.

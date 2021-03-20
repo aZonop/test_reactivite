@@ -1,32 +1,46 @@
-#include <16F887.h>
-#fuses HS,NOWDT,NOPROTECT,NOLVP,NODEBUG,USBDIV,VREGEN
-// To check
-#use delay(clock=20M)            //on définit une horloge de 20 MHz  pour le 16F887
-//#use rs232(baud=115200,parity=N,xmit=PIN_C6,rcv=PIN_C7,bits=8,stream=RS232)
-
-
+#include "..\include\887_sv3_std.h"			// Entete standard pour carte Simius 887
+#include <stdlib.h>		//Library to return a random number through rand() function
 
 #define led PIN_D0
-#define led_(x) output_bit(led,x)
 
 #define button PIN_D1
-#define button_(x) input_bit(button,x)
 
 #define LOW 0
 #define HIGH 1
 
+void init(){
+	output_drive(led);
+	output_float(button);
+}
+
 void main(){
-	
+	int1 val;
+	int16 rnd_time;
 	//initialisation
+	init()
 	
-	//L'utilisateur appuie une première fois sur le bouton poussoir
+	val=0;
+	while(val==0){
+		val=input_state(button)
+		//L'utilisateur appuie une première fois sur le bouton poussoir
+		//Quand ce sera un 1, on passera à la suite du programme
+	}	
+	
 
 	//boucle de jeu
 	while(true){
 		//temps aléatoire entre 3 et 6 sec
+		delay_ms(3000);
+		
+		rnd_time=rand()%3000; //Ne dépassera pas 3000 ms grâce au modulo
+		
+		delay_ms(rnd_time);
 		//led s'allume + mesure du temps
+		output_bit(led,HIGH)
 		//attendre appui sur le bouton
 		//led s'éteint + mesure du temps
+		
+		output_bit(led,LOW)
 		//envoit du temps sur le pc
 		
 	}
