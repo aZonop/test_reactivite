@@ -1,4 +1,4 @@
-//#DEVICE PIC16F887
+ //#DEVICE PIC16F887
 #include "..\include\887_sv3_std.h"
 #include <stdlib.h>
 
@@ -35,6 +35,8 @@ void init(){
 	enable_interrupts(INT_TIMER1);
 	
 	comp=0;
+	
+	//Visuel inutile
 	delay_ms(2000);
 	output_bit(led,HIGH);
 	delay_ms(200);
@@ -89,10 +91,12 @@ void main(){
 		printf("%u \t",comp);
 		delay_ms(100);
 	}*/
-	
+	//Tourne à l'infini pour pouvoir rejouer au jeu
 	while(true){
+		
 		comp=0;
 		val=1;	//1 = on n'appuye pas sur le bouton
+		//On attend que l'utilisateur appuie une première fois sur le bouton
 		while(val==1){
 			val=input_state(button);
 			output_bit(led,LOW);	
@@ -106,6 +110,7 @@ void main(){
 		output_bit(led,HIGH);
 		temps_0=comp; //démarrage du chrono
 		
+		//Attente de l'appui sur le bouton
 		while(val==1){
 			val=input_state(button);
 		}
